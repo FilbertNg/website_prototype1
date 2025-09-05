@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZE - Center of Excellence</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Project CSS -->
+    <link rel = "stylesheet" href="assets/css/styles.css"/>
+</head>
+
+<body class="antialiased">
+
+    <header id="main-header" class="fixed w-full z-[1000] py-6 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between">
+                <a href="#home" class="text-2xl font-bold text-white">STARGAZE</a>
+                <div class="hidden md:flex space-x-6 lg:space-x-10 text-white font-medium">
+                    <a href="#home" class="hover:text-teal-200 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-teal-200 transition-colors">About Us</a>
+                    <a href="#research" class="hover:text-teal-200 transition-colors">Research & Project</a>
+                    <a href="#publications" class="hover:text-teal-200 transition-colors">Publications & Resources</a>
+                    <a href="#partners" class="hover:text-teal-200 transition-colors">Partners & Collaborators</a>
+                    <a href="org-chart.html" class="hover:text-teal-200 transition-colors">Organization Chart</a>
+                    <a href="#contact" class="hover:text-teal-200 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Pioneering a Sustainable Future</h2>
+            <p>A Center of Excellence for sustainable technologies in agriculture and the zero-waste economy.</p>
+            <a href="#about" class="btn">Explore Our Mission</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Our Center</h2>
+            <p class="section-subtitle">We are committed to innovation and sustainability.</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://cdn.sanity.io/images/rh8k883q/production/fcf42f7c93b9a81cec99b186503ff4734958f4e4-7111x4000.jpg?rect=1442,607,3889,2288&w=1920" alt="Sustainable Farming">
+                </div>
+                <div class="about-text">
+                    <h3>Our Vision and Mission</h3>
+                    <p>At STARGAZE, we are dedicated to developing and implementing cutting-edge solutions for the most pressing challenges in modern agriculture. Our mission is to create a synergy between technological advancement and environmental stewardship.</p>
+                    <p>By focusing on precision farming, bioconversion of waste, and circular economy models, we aim to be a leader in transformative research that not only boosts agricultural productivity but also ensures a healthier planet for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Key Research Areas</h2>
+            <p class="section-subtitle">Driving innovation in sustainable agriculture and resource management.</p>
+            <div class="research-grid">
+                <div class="research-card">
+                    <i data-lucide="scan"></i>
+                    <h4>Precision Agriculture</h4>
+                    <p>Leveraging AI, IoT, and remote sensing to optimize crop yields and resource use.</p>
+                </div>
+                <div class="research-card">
+                    <i data-lucide="recycle"></i>
+                    <h4>Waste Bioconversion</h4>
+                    <p>Transforming agricultural by-products and waste into valuable resources like bioenergy and fertilizers.</p>
+                </div>
+                <div class="research-card">
+                    <i data-lucide="dna"></i>
+                    <h4>Genetic Crop Improvement</h4>
+                    <p>Developing resilient, high-yield crop varieties to withstand climate change and disease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Publications & Resources</h2>
+            <p class="section-subtitle">Showcasing our contributions to the academic community and providing valuable resources.</p>
+            <div class="publications-grid">
+                <div class="publication-item">
+                    <div class="publication-icon"><i data-lucide="book-check"></i></div>
+                    <div class="publication-details">
+                        <h5>Advancements in IoT-based Soil Monitoring Systems for Urban Farms</h5>
+                        <p>_Journal of Sustainable Technology_, Vol. 25, Issue 3, pp. 45-62. (2025)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-icon"><i data-lucide="book-check"></i></div>
+                    <div class="publication-details">
+                        <h5>A Novel Approach to Bioconversion of Sugarcane Bagasse into Bioethanol</h5>
+                        <p>_Proceedings of the International Conference on Renewable Energy_, pp. 112-120. (2025)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-icon"><i data-lucide="book-check"></i></div>
+                    <div class="publication-details">
+                        <h5>CRISPR-Cas9 Gene Editing for Drought Resistance in Local Rice Varieties</h5>
+                        <p>_Nature Communications_, Vol. 16, pp. 248-259. (2024)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="partners" class="section partners-section">
+        <div class="container">
+            <h2 class="section-title">Partners & Collaborators</h2>
+            <p class="section-subtitle">We collaborate with leading institutions and companies to drive innovation.</p>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=University+A" alt="University A Logo" class="partner-logo">
+                    <p class="partner-name">University A</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Corporation+B" alt="Corporation B Logo" class="partner-logo">
+                    <p class="partner-name">Corporation B</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Institute+C" alt="Institute C Logo" class="partner-logo">
+                    <p class="partner-name">Institute C</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Agri+Tech+D" alt="Agri Tech D Logo" class="partner-logo">
+                    <p class="partner-name">Agri Tech D</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Foundation+E" alt="Foundation E Logo" class="partner-logo">
+                    <p class="partner-name">Foundation E</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Connect with Us</h2>
+            <p class="section-subtitle">We welcome collaborations and inquiries from partners and researchers.</p>
+            <div class="connect-info" style="text-align: center;">
+                <p><strong>Address:</strong> 1 Innovation Street, Science City, Country XYZ</p>
+                <p><strong>Email:</strong> info@stargaze-coe.org</p>
+                <p><strong>Phone:</strong> +62 123 456 7890</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            </div>
+            <p>&copy; 2025 STARGAZE - Center of Excellence. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
