@@ -127,12 +127,24 @@
             padding: 40px 0;
         }
 
-        footer .social-icons a {
-            color: white;
-            transition: transform 0.3s ease;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem; /* Consistent spacing between icons */
+            margin-bottom: 1rem;
         }
         
-        footer .social-icons a:hover {
+        .social-icon {
+            color: white;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-icon:hover {
             transform: scale(1.1);
             color: #b2dfdb;
+        }
+        
+        .social-icon i {
+            width: 1.5rem; /* 24px, matches w-6 in Tailwind */
+            height: 1.5rem;
         }
