@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
     
     <!-- Project CSS -->
-    <link rel = "stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 
 <body class="antialiased">
@@ -21,17 +21,40 @@
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between">
                 <a href="#home" class="text-2xl font-bold text-white">STARGAZE</a>
-                <div class="hidden md:flex space-x-6 lg:space-x-10 text-white font-medium">
-                    <a href="#home" class="hover:text-teal-200 transition-colors">Home</a>
-                    <a href="#about" class="hover:text-teal-200 transition-colors">About Us</a>
-                    <a href="#research" class="hover:text-teal-200 transition-colors">Research & Project</a>
-                    <a href="#publications" class="hover:text-teal-200 transition-colors">Publications & Resources</a>
-                    <a href="#partners" class="hover:text-teal-200 transition-colors">Partners & Collaborators</a>
-                    <a href="org-chart.html" class="hover:text-teal-200 transition-colors">Organization Chart</a>
-                    <a href="#contact" class="hover:text-teal-200 transition-colors">Contact</a>
-                </div>
-                <button class="md:hidden text-white">
-                    <i data-lucide="menu"></i>
+                <ul class="nav-menu hidden md:flex space-x-6 lg:space-x-10 text-white font-medium">
+                    <li><a href="#home" class="hover:text-teal-200 transition-colors">Home</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">About <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="#about" class="block px-4 py-2 hover:bg-teal-50">About Us</a></li>
+                            <li><a href="org-chart.html" class="block px-4 py-2 hover:bg-teal-50">Organization Chart</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Research & Projects <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="#research" class="block px-4 py-2 hover:bg-teal-50">Research & Project</a></li>
+                            <li><a href="#grants" class="block px-4 py-2 hover:bg-teal-50">Grants & Project</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Publications <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="#publications" class="block px-4 py-2 hover:bg-teal-50">Publications & Resources</a></li>
+                            <li><a href="#news" class="block px-4 py-2 hover:bg-teal-50">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Partners <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="#partners" class="block px-4 py-2 hover:bg-teal-50">Partners & Collaborators</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="hover:text-teal-200 transition-colors">Contact</a></li>
+                </ul>
+                <button class="menu-toggle md:hidden text-white border-2 border-green-700 rounded p-1">
+                    <i data-lucide="menu" class="menu-icon w-6 h-6"></i>
+                    <i data-lucide="x" class="close-icon hidden w-6 h-6"></i>
                 </button>
             </nav>
         </div>
@@ -86,6 +109,30 @@
         </div>
     </section>
 
+    <section id="grants" class="section">
+        <div class="container">
+            <h2 class="section-title">Grants & Projects</h2>
+            <p class="section-subtitle">Exploring funding opportunities and ongoing projects.</p>
+            <div class="research-grid">
+                <div class="research-card">
+                    <i data-lucide="dollar-sign"></i>
+                    <h4>Grant 1</h4>
+                    <p>Description of grant 1.</p>
+                </div>
+                <div class="research-card">
+                    <i data-lucide="dollar-sign"></i>
+                    <h4>Grant 2</h4>
+                    <p>Description of grant 2.</p>
+                </div>
+                <div class="research-card">
+                    <i data-lucide="dollar-sign"></i>
+                    <h4>Project 1</h4>
+                    <p>Description of project 1.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="publications" class="section about-section">
         <div class="container">
             <h2 class="section-title">Publications & Resources</h2>
@@ -110,6 +157,36 @@
                     <div class="publication-details">
                         <h5>CRISPR-Cas9 Gene Editing for Drought Resistance in Local Rice Varieties</h5>
                         <p>_Nature Communications_, Vol. 16, pp. 248-259. (2024)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">News</h2>
+            <p class="section-subtitle">Latest updates and news from STARGAZE.</p>
+            <div class="publications-grid">
+                <div class="publication-item">
+                    <div class="publication-icon"><i data-lucide="newspaper"></i></div>
+                    <div class="publication-details">
+                        <h5>News Title 1</h5>
+                        <p>Date: 2025-09-01</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-icon"><i data-lucide="newspaper"></i></div>
+                    <div class="publication-details">
+                        <h5>News Title 2</h5>
+                        <p>Date: 2025-08-15</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-icon"><i data-lucide="newspaper"></i></div>
+                    <div class="publication-details">
+                        <h5>News Title 3</h5>
+                        <p>Date: 2025-07-20</p>
                     </div>
                 </div>
             </div>

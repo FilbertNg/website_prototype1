@@ -1,150 +1,238 @@
- @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-        :root {
-            --primary-color: #004d40;
-            --secondary-color: #00796b;
-            --background-dark: #e6f7f6;
-            --text-color: #2d3748;
-        }
+    :root {
+        --primary-color: #004d40;
+        --secondary-color: #00796b;
+        --background-dark: #e6f7f6;
+        --text-color: #2d3748;
+    }
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            color: var(--text-color);
-            background-color: var(--background-dark);
-            padding-top: 100px; /* Offset for fixed header */
-        }
+    body {
+        font-family: 'DM Sans', sans-serif;
+        color: var(--text-color);
+        background-color: var(--background-dark);
+        padding-top: 100px; /* Offset for fixed header */
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
 
-        #main-header {
-            background: rgba(0, 77, 64, 0.95);
-            color: white;
-            padding: 20px 0;
-            position: fixed;
+    #main-header {
+        background: rgba(0, 77, 64, 0.95);
+        color: white;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #main-header.scrolled {
+        background-color: rgba(0, 77, 64, 0.95);
+        backdrop-filter: blur(5px);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo h1 {
+        margin: 0;
+        font-size: 1.6em;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .nav-links a {
+        color: #004d40;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 30px;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #b2dfdb;
+    }
+
+    /* New Navbar Styles */
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .submenu {
+        display: none;
+        z-index: 1000;
+    }
+
+    .group:hover .submenu {
+        display: block;
+    }
+
+    .chevron {
+        transition: transform 0.3s ease;
+    }
+
+    .group:hover .chevron {
+        transform: rotate(180deg);
+    }
+
+    .menu-toggle {
+        border: 2px solid var(--secondary-color);
+        padding: 0.25rem;
+        border-radius: 4px;
+        background: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+        background-color: rgba(0, 121, 107, 0.2);
+    }
+
+    .menu-icon,
+    .close-icon {
+        color: var(--text-light);
+    }
+
+    @media (max-width: 767px) {
+        .nav-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
             width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 77, 64, 0.95);
+            padding: 1rem 0;
         }
 
-        #main-header.scrolled {
-            background-color: rgba(0, 77, 64, 0.95);
-            backdrop-filter: blur(5px);
-            padding-top: 10px;
-            padding-bottom: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .nav-menu li {
+            padding: 0.5rem 1.5rem;
         }
 
-        .navbar {
+        .nav-menu.open {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
-        .logo h1 {
-            margin: 0;
-            font-size: 1.6em;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
-
-        .nav-links a {
+        .submenu {
+            display: none;
+            position: static;
+            background: transparent;
+            box-shadow: none;
+            width: auto;
+            padding-left: 1.5rem;
             color: white;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 30px;
-            position: relative;
-            transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: #b2dfdb;
+        .submenu.open {
+            display: block;
         }
 
-        .section-header {
-            margin-bottom: 2rem;
-        }
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        .section-header p {
-            font-size: 1.125rem;
-            color: #718096;
+        .submenu a {
+            color: #004d40;
         }
 
-        .member-card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
+        .submenu a:hover {
+            color: #004d40;
         }
 
-        .member-card {
-            background-color: white;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        .group.active .chevron {
+            transform: rotate(180deg);
         }
+    }
 
-        .member-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    .section-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+    .section-header p {
+        font-size: 1.125rem;
+        color: #718096;
+    }
 
-        .member-photo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            border: 3px solid var(--secondary-color);
-            object-fit: cover;
-        }
+    .member-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
 
-        .member-name {
-            font-weight: 600;
-            color: var(--primary-color);
-        }
+    .member-card {
+        background-color: white;
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
 
-        .member-title {
-            font-size: 0.875rem;
-            color: #718096;
-        }
+    .member-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
 
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-        }
+    .member-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto 1rem;
+        border: 3px solid var(--secondary-color);
+        object-fit: cover;
+    }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem; /* Consistent spacing between icons */
-            margin-bottom: 1rem;
-        }
-        
-        .social-icon {
-            color: white;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-        
-        .social-icon:hover {
-            transform: scale(1.1);
-            color: #b2dfdb;
-        }
-        
-        .social-icon i {
-            width: 1.5rem; /* 24px, matches w-6 in Tailwind */
-            height: 1.5rem;
-        }
+    .member-name {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .member-title {
+        font-size: 0.875rem;
+        color: #718096;
+    }
+
+    footer {
+        background: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-icon {
+        color: white;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.1);
+        color: #b2dfdb;
+    }
+
+    .social-icon i {
+        width: 1.5rem;
+        height: 1.5rem;
+    }

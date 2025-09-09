@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // initialize lucide (icons)
+  // Initialize Lucide icons
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
@@ -48,5 +48,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
   animatedSections.forEach(section => {
     observer.observe(section);
+  });
+
+  // Mobile menu toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const menuIcon = document.querySelector('.menu-icon');
+  const closeIcon = document.querySelector('.close-icon');
+
+  if (menuToggle && navMenu && menuIcon && closeIcon) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  }
+
+  // Dropdown toggles for mobile
+  const dropdowns = document.querySelectorAll('.nav-menu .group');
+  dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('a');
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth < 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+        const submenu = dropdown.querySelector('.submenu');
+        submenu.classList.toggle('open');
+      }
+    });
+  });
+
+  // Enhanced dropdown hover behavior for desktop
+  const groups = document.querySelectorAll('.group');
+  groups.forEach(group => {
+    const submenu = group.querySelector('.submenu');
+    let timeout;
+
+    group.addEventListener('mouseenter', () => {
+      clearTimeout(timeout);
+      submenu.style.display = 'block';
+    });
+
+    group.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => {
+        submenu.style.display = 'none';
+      }, 200); // 200ms delay to allow cursor movement to submenu
+    });
+
+    submenu.addEventListener('mouseenter', () => {
+      clearTimeout(timeout);
+      submenu.style.display = 'block';
+    });
+
+    submenu.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => {
+        submenu.style.display = 'none';
+      }, 200);
+    });
   });
 });
