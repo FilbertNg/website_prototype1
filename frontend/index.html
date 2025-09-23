@@ -41,7 +41,7 @@
                         <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Publications <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
                         <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
                             <li><a href="#publications" class="block px-4 py-2 hover:bg-teal-50">Publications & Resources</a></li>
-                            <li><a href="#news" class="block px-4 py-2 hover:bg-teal-50">News</a></li>
+                            <li><a href="news.html" class="block px-4 py-2 hover:bg-teal-50">News</a></li>
                         </ul>
                     </li>
                     <li class="relative group">
@@ -54,7 +54,7 @@
                 </ul>
                 <button class="menu-toggle md:hidden text-white border-2 border-green-700 rounded p-1">
                     <i data-lucide="menu" class="menu-icon w-6 h-6"></i>
-                    <i data-lucide="x" class="close-icon hidden w-6 h-6"></i>
+                    <i data-lucide="x" class="close-icon hidden w-6 h-4"></i>
                 </button>
             </nav>
         </div>
@@ -136,28 +136,95 @@
     <section id="publications" class="section about-section">
         <div class="container">
             <h2 class="section-title">Publications & Resources</h2>
-            <p class="section-subtitle">Showcasing our contributions to the academic community and providing valuable resources.</p>
-            <div class="publications-grid">
-                <div class="publication-item">
-                    <div class="publication-icon"><i data-lucide="book-check"></i></div>
-                    <div class="publication-details">
-                        <h5>Advancements in IoT-based Soil Monitoring Systems for Urban Farms</h5>
-                        <p>_Journal of Sustainable Technology_, Vol. 25, Issue 3, pp. 45-62. (2025)</p>
-                    </div>
+            <p class="section-subtitle">Showcasing our contributions to the academic community and providing valuable resources for researchers and practitioners worldwide.</p>
+            <div class="stats-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+                <div class="stat-card bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="book-open" class="text-var(--secondary-color) text-3xl mb-2"></i>
+                    <h3 class="text-lg font-bold text-var(--primary-color)">Total Papers</h3>
+                    <p class="text-2xl font-semibold">10</p>
                 </div>
-                <div class="publication-item">
-                    <div class="publication-icon"><i data-lucide="book-check"></i></div>
-                    <div class="publication-details">
-                        <h5>A Novel Approach to Bioconversion of Sugarcane Bagasse into Bioethanol</h5>
-                        <p>_Proceedings of the International Conference on Renewable Energy_, pp. 112-120. (2025)</p>
-                    </div>
+                <div class="stat-card bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="award" class="text-var(--secondary-color) text-3xl mb-2"></i>
+                    <h3 class="text-lg font-bold text-var(--primary-color)">WoS Quartiles</h3>
+                    <p class="text-2xl font-semibold">4|3|1|0</p>
                 </div>
-                <div class="publication-item">
-                    <div class="publication-icon"><i data-lucide="book-check"></i></div>
-                    <div class="publication-details">
-                        <h5>CRISPR-Cas9 Gene Editing for Drought Resistance in Local Rice Varieties</h5>
-                        <p>_Nature Communications_, Vol. 16, pp. 248-259. (2024)</p>
-                    </div>
+                <div class="stat-card bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="file-text" class="text-var(--secondary-color) text-3xl mb-2"></i>
+                    <h3 class="text-lg font-bold text-var(--primary-color)">Conference Papers</h3>
+                    <p class="text-2xl font-semibold">2</p>
+                </div>
+                <div class="stat-card bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="search" class="text-var(--secondary-color) text-3xl mb-2"></i>
+                    <h3 class="text-lg font-bold text-var(--primary-color)">Scopus-Indexed</h3>
+                    <p class="text-2xl font-semibold">8</p>
+                </div>
+                <div class="stat-card bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="x-circle" class="text-var(--secondary-color) text-3xl mb-2"></i>
+                    <h3 class="text-lg font-bold text-var(--primary-color)">Non-Indexed</h3>
+                    <p class="text-2xl font-semibold">2</p>
+                </div>
+                <div class="stat-card bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="shield" class="text-var(--secondary-color) text-3xl mb-2"></i>
+                    <h3 class="text-lg font-bold text-var(--primary-color)">Patents Filed/Granted</h3>
+                    <p class="text-2xl font-semibold">2/1</p>
+                </div>
+            </div>
+            <div class="search-filter flex flex-col md:flex-row gap-4 mb-8 items-center">
+                <div class="relative flex-grow">
+                    <input type="text" placeholder="Search publications..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-var(--secondary-color) pr-10">
+                    <i data-lucide="search" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+                </div>
+                <select class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-var(--secondary-color) bg-white text-gray-700">
+                    <option>All Years</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                </select>
+                <select class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-var(--secondary-color) bg-white text-gray-700">
+                    <option>All Types</option>
+                    <option>Journal</option>
+                    <option>Conference</option>
+                    <option>Patent</option>
+                </select>
+            </div>
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-var(--primary-color)">Recent Publications</h3>
+                <a href="publications.html" class="see-more-button text-[#38b2ac] py-2 px-4 rounded-lg transition-colors flex items-center">
+                    See More <i data-lucide="chevron-right" class="ml-2 w-4 h-4 text-[#38b2ac]"></i>
+                </a>
+            </div>
+            <div class="publications-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+                    <span class="absolute top-1 right-1 bg-var(--accent-color) text-white text-xs px-1 py-0.5 rounded-full">Journal</span>
+                    <h5 class="text-base font-bold text-var(--primary-color) mb-2 mr-12 line-clamp-2">Advancements in IoT-based Soil Monitoring Systems for Urban Farms</h5>
+                    <p class="text-var(--secondary-color) flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Journal of Sustainable Technology</p>
+                    <p class="text-var(--secondary-color) flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>John Doe, Jane Smith, et al.</p>
+                    <p class="text-var(--secondary-color) flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: 9.2</p>
+                    <p class="text-gray-600 mb-4">WoS Q1, Scopus-Indexed</p>
+                    <a href="publication1.html" class="w-full bg-var(--accent-color) text-white py-2 px-4 rounded-lg hover:bg-var(--secondary-color) transition-colors flex items-center justify-center">
+                        View Details <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+                    <span class="absolute top-1 right-1 bg-var(--accent-color) text-white text-xs px-1 py-0.5 rounded-full">Conference</span>
+                    <h5 class="text-base font-bold text-var(--primary-color) mb-2 mr-12 line-clamp-2">A Novel Approach to Bioconversion of Sugarcane Bagasse into Bioethanol</h5>
+                    <p class="text-var(--secondary-color) flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Proceedings of the International Conference on Renewable Energy</p>
+                    <p class="text-var(--secondary-color) flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>Alice Johnson, Bob Lee, et al.</p>
+                    <p class="text-var(--secondary-color) flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: N/A</p>
+                    <p class="text-gray-600 mb-4">Conference Paper, Non-Indexed</p>
+                    <a href="publication2.html" class="w-full bg-var(--accent-color) text-white py-2 px-4 rounded-lg hover:bg-var(--secondary-color) transition-colors flex items-center justify-center">
+                        View Details <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+                    <span class="absolute top-1 right-1 bg-var(--accent-color) text-white text-xs px-1 py-0.5 rounded-full">Journal</span>
+                    <h5 class="text-base font-bold text-var(--primary-color) mb-2 mr-12 line-clamp-2">CRISPR-Cas9 Gene Editing for Drought Resistance in Local Rice Varieties</h5>
+                    <p class="text-var(--secondary-color) flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Nature Communications</p>
+                    <p class="text-var(--secondary-color) flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>Chris Kim, Dana White, et al.</p>
+                    <p class="text-var(--secondary-color) flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: 15.7</p>
+                    <p class="text-gray-600 mb-4">WoS Q1, Scopus-Indexed</p>
+                    <a href="publication3.html" class="w-full bg-var(--accent-color) text-white py-2 px-4 rounded-lg hover:bg-var(--secondary-color) transition-colors flex items-center justify-center">
+                        View Details <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -167,27 +234,27 @@
         <div class="container">
             <h2 class="section-title">News</h2>
             <p class="section-subtitle">Latest updates and news from STARGAZE.</p>
-            <div class="publications-grid">
-                <div class="publication-item">
-                    <div class="publication-icon"><i data-lucide="newspaper"></i></div>
-                    <div class="publication-details">
-                        <h5>News Title 1</h5>
-                        <p>Date: 2025-09-01</p>
-                    </div>
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-var(--primary-color)">Latest News</h3>
+                <a href="news.html" class="see-more-button text-[#38b2ac] py-2 px-4 rounded-lg transition-colors flex items-center">
+                    See More <i data-lucide="chevron-right" class="ml-2 w-4 h-4 text-[#38b2ac]"></i>
+                </a>
+            </div>
+            <div class="news-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="text-xl font-bold text-var(--primary-color) mb-2">Breakthrough in Precision Farming Technology</h4>
+                    <p class="text-gray-600">Our team has developed a new AI-driven system that increases crop yields by 30% while reducing water usage. This innovation is set to revolutionize sustainable agriculture.</p>
                 </div>
-                <div class="publication-item">
-                    <div class="publication-icon"><i data-lucide="newspaper"></i></div>
-                    <div class="publication-details">
-                        <h5>News Title 2</h5>
-                        <p>Date: 2025-08-15</p>
-                    </div>
+                <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="text-xl font-bold text-var(--primary-color) mb-2">New Partnership for Waste Bioconversion Research</h4>
+                    <p class="text-gray-600">STARGAZE announces collaboration with leading biotech firms to advance waste-to-energy technologies, promoting a circular economy in agriculture.</p>
                 </div>
-                <div class="publication-item">
-                    <div class="publication-icon"><i data-lucide="newspaper"></i></div>
-                    <div class="publication-details">
-                        <h5>News Title 3</h5>
-                        <p>Date: 2025-07-20</p>
-                    </div>
+                <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="text-xl font-bold text-var(--primary-color) mb-2">Gene Editing Workshop Success</h4>
+                    <p class="text-gray-600">Over 200 researchers attended our CRISPR-Cas9 workshop, fostering international collaboration on drought-resistant crop development.</p>
                 </div>
             </div>
         </div>
@@ -197,26 +264,26 @@
         <div class="container">
             <h2 class="section-title">Partners & Collaborators</h2>
             <p class="section-subtitle">We collaborate with leading institutions and companies to drive innovation.</p>
-            <div class="partners-grid">
-                <div class="partner-card">
-                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=University+A" alt="University A Logo" class="partner-logo">
-                    <p class="partner-name">University A</p>
+            <div class="partners-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-8">
+                <div class="partner-card flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=University+A" alt="University A Logo" class="partner-logo w-32 h-16 object-contain mb-2">
+                    <p class="text-sm text-gray-600 opacity-70 font-medium">University A</p>
                 </div>
-                <div class="partner-card">
-                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Corporation+B" alt="Corporation B Logo" class="partner-logo">
-                    <p class="partner-name">Corporation B</p>
+                <div class="partner-card flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Corporation+B" alt="Corporation B Logo" class="partner-logo w-32 h-16 object-contain mb-2">
+                    <p class="text-sm text-gray-600 opacity-70 font-medium">Corporation B</p>
                 </div>
-                <div class="partner-card">
-                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Institute+C" alt="Institute C Logo" class="partner-logo">
-                    <p class="partner-name">Institute C</p>
+                <div class="partner-card flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Institute+C" alt="Institute C Logo" class="partner-logo w-32 h-16 object-contain mb-2">
+                    <p class="text-sm text-gray-600 opacity-70 font-medium">Institute C</p>
                 </div>
-                <div class="partner-card">
-                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Agri+Tech+D" alt="Agri Tech D Logo" class="partner-logo">
-                    <p class="partner-name">Agri Tech D</p>
+                <div class="partner-card flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Agri+Tech+D" alt="Agri Tech D Logo" class="partner-logo w-32 h-16 object-contain mb-2">
+                    <p class="text-sm text-gray-600 opacity-70 font-medium">Agri Tech D</p>
                 </div>
-                <div class="partner-card">
-                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Foundation+E" alt="Foundation E Logo" class="partner-logo">
-                    <p class="partner-name">Foundation E</p>
+                <div class="partner-card flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/150x50/e0f2f1/004d40?text=Foundation+E" alt="Foundation E Logo" class="partner-logo w-32 h-16 object-contain mb-2">
+                    <p class="text-sm text-gray-600 opacity-70 font-medium">Foundation E</p>
                 </div>
             </div>
         </div>

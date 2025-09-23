@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     group.addEventListener('mouseleave', () => {
       timeout = setTimeout(() => {
         submenu.style.display = 'none';
-      }, 200); // 200ms delay to allow cursor movement to submenu
+      }, 30); // 200ms delay to allow cursor movement to submenu
     });
 
     submenu.addEventListener('mouseenter', () => {
@@ -107,3 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+function toggleDetails(id) {
+  const element = document.getElementById(id);
+  element.classList.toggle('hidden');
+}

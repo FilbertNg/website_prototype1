@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZE - Publications & Resources</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+
+<body class="antialiased bg-gray-50 text-gray-800">
+
+    <header id="main-header" class="fixed w-full z-50 py-4 bg-teal-900/95 backdrop-blur-md shadow-lg transition-all duration-300">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-white">STARGAZE</a>
+            <nav class="hidden md:flex space-x-6 text-white font-medium">
+                <a href="index.html#home" class="hover:text-teal-200 transition-colors">Home</a>
+                <div class="relative group">
+                    <a href="#" class="hover:text-teal-200 transition-colors flex items-center">About <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i></a>
+                    <ul class="submenu absolute hidden group-hover:block mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2">
+                        <li><a href="index.html#about" class="block px-4 py-2 hover:bg-teal-50">About Us</a></li>
+                        <li><a href="org-chart.html" class="block px-4 py-2 hover:bg-teal-50">Organization Chart</a></li>
+                    </ul>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Research <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i></a>
+                    <ul class="submenu absolute hidden group-hover:block mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2">
+                        <li><a href="index.html#research" class="block px-4 py-2 hover:bg-teal-50">Research</a></li>
+                        <li><a href="index.html#grants" class="block px-4 py-2 hover:bg-teal-50">Grants</a></li>
+                    </ul>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Publications <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i></a>
+                    <ul class="submenu absolute hidden group-hover:block mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2">
+                        <li><a href="#publications" class="block px-4 py-2 hover:bg-teal-50">Publications</a></li>
+                        <li><a href="news.html" class="block px-4 py-2 hover:bg-teal-50">News</a></li>
+                    </ul>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Partners <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i></a>
+                    <ul class="submenu absolute hidden group-hover:block mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2">
+                        <li><a href="index.html#partners" class="block px-4 py-2 hover:bg-teal-50">Partners</a></li>
+                    </ul>
+                </div>
+                <a href="index.html#contact" class="hover:text-teal-200 transition-colors">Contact</a>
+            </nav>
+            <button class="md:hidden text-white border-2 border-teal-700 rounded p-1 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+                <i data-lucide="x" class="hidden w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="section py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-teal-800 mb-4 text-center">Publications & Resources</h2>
+            <p class="section-subtitle text-gray-600 mb-8 text-center max-w-2xl mx-auto">Explore our extensive collection of research publications.</p>
+            <div class="stats-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
+                <div class="stat-card bg-white p-5 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="book-open" class="text-teal-600 text-3xl mb-2"></i>
+                    <h3 class="text-lg font-semibold text-teal-800">Total Papers</h3>
+                    <p class="text-2xl font-bold">10</p>
+                </div>
+                <div class="stat-card bg-white p-5 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="award" class="text-teal-600 text-3xl mb-2"></i>
+                    <h3 class="text-lg font-semibold text-teal-800">WoS Quartiles</h3>
+                    <p class="text-2xl font-bold">4|3|1|0</p>
+                </div>
+                <div class="stat-card bg-white p-5 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="file-text" class="text-teal-600 text-3xl mb-2"></i>
+                    <h3 class="text-lg font-semibold text-teal-800">Conference Papers</h3>
+                    <p class="text-2xl font-bold">2</p>
+                </div>
+                <div class="stat-card bg-white p-5 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="search" class="text-teal-600 text-3xl mb-2"></i>
+                    <h3 class="text-lg font-semibold text-teal-800">Scopus-Indexed</h3>
+                    <p class="text-2xl font-bold">8</p>
+                </div>
+                <div class="stat-card bg-white p-5 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="x-circle" class="text-teal-600 text-3xl mb-2"></i>
+                    <h3 class="text-lg font-semibold text-teal-800">Non-Indexed</h3>
+                    <p class="text-2xl font-bold">2</p>
+                </div>
+                <div class="stat-card bg-white p-5 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                    <i data-lucide="shield" class="text-teal-600 text-3xl mb-2"></i>
+                    <h3 class="text-lg font-semibold text-teal-800">Patents</h3>
+                    <p class="text-2xl font-bold">2/1</p>
+                </div>
+            </div>
+            <div class="publications-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-2 py-1 rounded-full">Journal</span>
+                    <h5 class="text-lg font-semibold text-teal-800 mb-2 line-clamp-2">Advancements in IoT-based Soil Monitoring Systems for Urban Farms</h5>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Journal of Sustainable Technology</p>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>John Doe, Jane Smith, et al.</p>
+                    <p class="text-teal-600 flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: 9.2</p>
+                    <a href="publication1.html" class="w-full bg-teal-400 text-white py-2 rounded-lg hover:bg-teal-500 transition-colors text-center block">View Details</a>
+                </div>
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-2 py-1 rounded-full">Conference</span>
+                    <h5 class="text-lg font-semibold text-teal-800 mb-2 line-clamp-2">A Novel Approach to Bioconversion of Sugarcane Bagasse into Bioethanol</h5>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Intl. Conf. on Renewable Energy</p>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>Alice Johnson, Bob Lee, et al.</p>
+                    <p class="text-teal-600 flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: N/A</p>
+                    <a href="publication2.html" class="w-full bg-teal-400 text-white py-2 rounded-lg hover:bg-teal-500 transition-colors text-center block">View Details</a>
+                </div>
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-2 py-1 rounded-full">Journal</span>
+                    <h5 class="text-lg font-semibold text-teal-800 mb-2 line-clamp-2">CRISPR-Cas9 Gene Editing for Drought Resistance in Local Rice</h5>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Nature Communications</p>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>Chris Kim, Dana White, et al.</p>
+                    <p class="text-teal-600 flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: 15.7</p>
+                    <a href="publication3.html" class="w-full bg-teal-400 text-white py-2 rounded-lg hover:bg-teal-500 transition-colors text-center block">View Details</a>
+                </div>
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-2 py-1 rounded-full">Journal</span>
+                    <h5 class="text-lg font-semibold text-teal-800 mb-2 line-clamp-2">Sustainable Water Management Using AI in Arid Regions</h5>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Water Resources Journal</p>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>Emily Chen, Mark Taylor, et al.</p>
+                    <p class="text-teal-600 flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Impact Factor: 7.8</p>
+                    <a href="publication4.html" class="w-full bg-teal-400 text-white py-2 rounded-lg hover:bg-teal-500 transition-colors text-center block">View Details</a>
+                </div>
+                <div class="paper-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-2 py-1 rounded-full">Patent</span>
+                    <h5 class="text-lg font-semibold text-teal-800 mb-2 line-clamp-2">Innovative Solar-Powered Irrigation System Design</h5>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>Patent Office Filing</p>
+                    <p class="text-teal-600 flex items-center mb-1"><i data-lucide="users" class="mr-2 w-4 h-4"></i>Robert Green, Lisa Brown, et al.</p>
+                    <p class="text-teal-600 flex items-center mb-4"><i data-lucide="trending-up" class="mr-2 w-4 h-4"></i>Granted: 2024</p>
+                    <a href="publication5.html" class="w-full bg-teal-400 text-white py-2 rounded-lg hover:bg-teal-500 transition-colors text-center block">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center gap-4 mb-4">
+                <a href="#" class="hover:text-teal-300 transition-colors"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-teal-300 transition-colors"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-teal-300 transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-teal-300 transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+            </div>
+            <p class="text-sm">&copy; 2025 STARGAZE - Center of Excellence. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

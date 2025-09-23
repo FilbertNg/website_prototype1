@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZE - News</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="antialiased">
+
+    <header id="main-header" class="fixed w-full z-[1000] py-6 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white">STARGAZE</a>
+                <ul class="nav-menu hidden md:flex space-x-6 lg:space-x-10 text-white font-medium">
+                    <li><a href="index.html" class="hover:text-teal-200 transition-colors">Home</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">About <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="index.html#about" class="block px-4 py-2 hover:bg-teal-50">About Us</a></li>
+                            <li><a href="org-chart.html" class="block px-4 py-2 hover:bg-teal-50">Organization Chart</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Research & Projects <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="index.html#research" class="block px-4 py-2 hover:bg-teal-50">Research & Project</a></li>
+                            <li><a href="index.html#grants" class="block px-4 py-2 hover:bg-teal-50">Grants & Project</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Publications <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="index.html#publications" class="block px-4 py-2 hover:bg-teal-50">Publications & Resources</a></li>
+                            <li><a href="news.html" class="block px-4 py-2 hover:bg-teal-50">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-teal-200 transition-colors flex items-center">Partners <i data-lucide="chevron-down" class="chevron ml-1 w-4 h-4"></i></a>
+                        <ul class="submenu hidden group-hover:block absolute left-0 mt-2 bg-white text-gray-800 rounded-lg shadow-lg py-2 w-48">
+                            <li><a href="index.html#partners" class="block px-4 py-2 hover:bg-teal-50">Partners & Collaborators</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#contact" class="hover:text-teal-200 transition-colors">Contact</a></li>
+                </ul>
+                <button class="menu-toggle md:hidden text-white border-2 border-green-700 rounded p-1">
+                    <i data-lucide="menu" class="menu-icon w-6 h-6"></i>
+                    <i data-lucide="x" class="close-icon hidden w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section class="section about-section">
+            <div class="container">
+                <h2 class="section-title">All News</h2>
+                <p class="section-subtitle">Stay updated with the latest developments and announcements from STARGAZE.</p>
+                <div class="news-grid grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-var(--primary-color) mb-2">Breakthrough in Precision Farming Technology</h4>
+                        <p class="text-gray-600 mb-2"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>September 15, 2025</p>
+                        <p class="text-gray-600">Our team has developed a new AI-driven system that increases crop yields by 30% while reducing water usage. This innovation is set to revolutionize sustainable agriculture.</p>
+                    </div>
+                    <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-var(--primary-color) mb-2">New Partnership for Waste Bioconversion Research</h4>
+                        <p class="text-gray-600 mb-2"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>September 10, 2025</p>
+                        <p class="text-gray-600">STARGAZE announces collaboration with leading biotech firms to advance waste-to-energy technologies, promoting a circular economy in agriculture.</p>
+                    </div>
+                    <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-var(--primary-color) mb-2">Gene Editing Workshop Success</h4>
+                        <p class="text-gray-600 mb-2"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>September 5, 2025</p>
+                        <p class="text-gray-600">Over 200 researchers attended our CRISPR-Cas9 workshop, fostering international collaboration on drought-resistant crop development.</p>
+                    </div>
+                    <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1519396137117-9b5d2f8e52e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-var(--primary-color) mb-2">New Funding for Sustainable Agriculture</h4>
+                        <p class="text-gray-600 mb-2"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>August 30, 2025</p>
+                        <p class="text-gray-600">STARGAZE secures a $2M grant to expand research into sustainable farming practices across Southeast Asia.</p>
+                    </div>
+                    <div class="news-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1562342583-5e9f2e668ac7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News 5" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-var(--primary-color) mb-2">Award for Innovation in Bioconversion</h4>
+                        <p class="text-gray-600 mb-2"><i data-lucide="calendar" class="mr-2 w-4 h-4"></i>August 20, 2025</p>
+                        <p class="text-gray-600">Our bioconversion team wins the Green Innovation Award for pioneering waste-to-energy solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container py-8 text-center">
+            <div class="social-icons flex justify-center gap-6 mb-4">
+                <a href="#" aria-label="Facebook" class="social-icon"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" aria-label="Twitter" class="social-icon"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                <a href="#" aria-label="LinkedIn" class="social-icon"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="#" aria-label="Instagram" class="social-icon"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+            </div>
+            <p>&copy; 2025 STARGAZE - Center of Excellence. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
